@@ -1,0 +1,35 @@
+﻿@model User
+
+<div class="text-center">
+  <h1 class="display-4">Enter yo info playa</h1>
+  <form
+    asp-action="Create"
+    asp-controller="Home"
+    class="form-group"
+    method="post"
+  >
+    <label asp-for="FirstName"></label>
+    <span asp-validation-for="FirstName"></span>
+    <input class="form-control" asp-for="FirstName" />
+
+    <label asp-for="LastName"></label>
+    <span asp-validation-for="LastName"></span>
+    <input class="form-control" asp-for="LastName" />
+
+    <label asp-for="Age"></label>
+    <span asp-validation-for="Age"></span>
+    <input class="form-control" asp-for="Age" />
+
+    <label asp-for="Email"></label>
+    <span asp-validation-for="Email"></span>
+    <input class="form-control" asp-for="Email" />
+
+    <label asp-for="Password"></label>
+    <span asp-validation-for="Password"></span>
+    <input class="form-control" asp-for="Password" />
+
+    <button class="btn btn-primary" type="submit" style="margin-top: 7px">
+      Submit
+    </button>
+  </form>
+</div>
